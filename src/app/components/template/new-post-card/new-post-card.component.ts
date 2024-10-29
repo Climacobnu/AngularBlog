@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { NewPostFormComponent } from '../new-post-form/new-post-form.component';
 
 @Component({
   selector: 'app-new-post-card',
@@ -12,6 +13,6 @@ export class NewPostCardComponent implements OnInit {
   ngOnInit(): void {}
 
   newPost() {
-    this.dialog.open(NewPostCardComponent);
+    this.dialog.open(NewPostFormComponent);
   }
 }

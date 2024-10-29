@@ -1,4 +1,5 @@
 
+
 //ng new --standalone=false
 
 import { NgModule } from '@angular/core';
@@ -22,7 +23,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { NewPostCardComponent } from './components/template/new-post-card/new-post-card.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+
+
 import {MatInputModule} from '@angular/material/input';
 
 

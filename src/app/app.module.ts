@@ -1,7 +1,10 @@
+
 //ng new --standalone=false
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +21,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { NewPostCardComponent } from './components/template/new-post-card/new-post-card.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+
+
 
 @NgModule({
   declarations: [
@@ -31,14 +37,18 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule,
-    MatDialogModule,
     HttpClientModule,
     MatSnackBarModule,
+    MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
